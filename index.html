@@ -1,174 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>LeTungLam</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="img/favicon.jpg">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
+    <title>LeTungLam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .profile-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-card img {
+            width: 160px; /* Tăng kích thước chiều rộng */
+            height: 220px; /* Tăng kích thước chiều cao */
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .profile-card div {
+            flex: 1;
+        }
+
+        .profile-card p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .profile-card i {
+            color: teal;
+            margin-right: 10px;
+        }
+
+        .section {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .section h2 {
+            color: teal;
+        }
+
+        .section p, .section h5, .section h6 {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body class="w3-light-grey">
+
 <!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<div class="w3-content w3-margin-top container">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-third" style="margin-top: 40px">
-          <img src="img/avatar.jpg" style="width: 135px;height: 203px;" alt="Avatar">
+    <!-- Profile Section -->
+    <div class="profile-card">
+        <img src="img/avatar.jpg" alt="Avatar">
+        <div>
+            <p><i class="fa fas fa-heart fa-fw w3-large"></i>Lê Tùng Lâm</p>
+            <p><i class="fa fa-briefcase fa-fw w3-large"></i>Java Developer</p>
+            <p><i class="fa fa-home fa-fw w3-large"></i>Hanoi, Vietnam</p>
+            <p><i class="fa fa-envelope fa-fw w3-large"></i>letunglam.dev@gmail.com</p>
+            <p><i class="fa fa-phone fa-fw w3-large"></i>0986296471</p>
+            <p><i class="fa fa-github fa-fw w3-large"></i><a href="https://github.com/lamlt1211" target="_blank">https://github.com/lamlt1211</a>
+            </p>
         </div>
-        <div class="w3-twothird">
-          <hr>
-            <p><i class="fa fas fa-heart fa-fw w3-margin-right w3-large w3-text-teal"></i>Lê Tùng Lâm</p>
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Java Developer</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Hanoi, Vietnam</p> 
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>letunglam.dev@gmail.com</p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0986296471</p>
-            <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>https://github.com/lamlt1211</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <br>
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Objective</b></p>
-            <p>Looking forward to working in a professional, stable and developing environment for a long-term commitment with the company. The
-              goal of becoming a good developer. Hope to bring value to myself as wel as organization</p>
-          <br>
-
-          <br>
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-futbol-o fa-fw w3-margin-right w3-text-teal"></i>Hobbies</b></p>
-            <p>Learn English</p>
-            <p>Play Football</p>
-            <p>Read and research new technology</p>
-          <br>
-        </div>
-      </div><br>
-    <!-- End Left Column -->
     </div>
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Bachkhoa-Aptech</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - Oct 2020</h6>
-          <p>Major: Information Technology</p>
-          <p>Certificate: Credit</p>
-          <hr>
-        </div>
-      </div>
+    <div class="section">
+        <h2><i class="fa fa-globe fa-fw"></i>Objective</h2>
+        <p>Looking forward to working in a professional, stable and developing environment for a long-term commitment
+            with the company. The goal of becoming a good developer. Hope to bring value to myself as well as the
+            organization.</p>
+    </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</h2>
+    <div class="section">
+        <h2><i class="fa fa-graduation-cap fa-fw"></i>Education</h2>
         <div class="w3-container">
-          <p><b>Programming Language - </b>Can work with Java programming language (Spring)</p>
-          <p><b>Database - </b>Basic understanding of SQL Server,MySQL and Oracle Database</p>
-          <p><b>Tools Build  - </b>Worked with IntelliJ, Net beans, Visual Studio, Eclipse</p>
-          <p><b>Sources Control - </b>Can use Git on platforms like GitHub, Source Tree, Smart Git</p>
-          <p><b>English - </b>Able to read and understand documents in English</p>
-          <p><b>Other Skills - </b>Have a basic understanding of Design Patterns
-            Communication, Teamwork, Agile, Scrum, Docker and presentation skills</p>
-          <hr>
+            <h5 class="w3-opacity"><b>Bachkhoa-Aptech</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - Oct 2020</h6>
+            <p>Major: Information Technology</p>
+            <p>Certificate: Credit</p>
+            <hr>
         </div>
-      </div>
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Backend Developer - Lendbiz</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Làm mình làm mẩy</p><br>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section">
+        <h2><i class="fa fa-asterisk fa-fw"></i>Skills</h2>
+        <p><b>Programming Language: </b>Can work with Java programming language (Spring)</p>
+        <p><b>Database: </b>Basic understanding of SQL Server, MySQL, and Oracle Database</p>
+        <p><b>Tools Build: </b>Worked with IntelliJ, NetBeans, Visual Studio, Eclipse</p>
+        <p><b>Source Control: </b>Can use Git on platforms like GitHub, SourceTree, SmartGit</p>
+        <p><b>English: </b>Able to read and understand documents in English</p>
+        <p><b>Other Skills: </b>Have a basic understanding of Design Patterns, Communication, Teamwork, Agile, Scrum,
+            Docker, and presentation skills</p>
+    </div>
+
+    <!-- Work Experience Section -->
+    <div class="section">
+        <h2><i class="fa fa-suitcase fa-fw"></i>Work Experience</h2>
+        <div>
+            <h5 class="w3-opacity"><b>Backend Developer - Lendbiz</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - <span
+                    class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p>Làm mình làm mẩy</p>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Java Developer - Savvycom Software</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Dec 2022 </h6>
-          <p>- Join the company internal training project - Timesheet</p>
-          <p>- Join project outsource teambase and fixed cost</p>
-          <p>- Develop back-end modules in projects</p>
-          <hr>
+        <div>
+            <h5 class="w3-opacity"><b>Java Developer - Savvycom Software</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Dec 2022</h6>
+            <p>- Join the company internal training project - Timesheet</p>
+            <p>- Join project outsource teambase and fixed cost</p>
+            <p>- Develop back-end modules in projects</p>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Unity Developer - Monster Game Studio</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2021 - May 2021</h6>
-          <p>- Training in SOLID, Design Pattern, Unity</p>
-          <p>- Join making a mini game</p>
-          <hr>
+        <div>
+            <h5 class="w3-opacity"><b>Unity Developer - Monster Game Studio</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2021 - May 2021</h6>
+            <p>- Training in SOLID, Design Pattern, Unity</p>
+            <p>- Join making a mini game</p>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Java Developer - SmartOSC Fintech</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2019 - Nov 2020</h6>
-          <p>- Take part in training academy of company about Java core, Spring
-            framework, MySQL, Restful API, Thymeleaf, Postman</p>
-            <p>- Write Code , Fix bugs , Write Unit Test</p>
+        <div>
+            <h5 class="w3-opacity"><b>Java Developer - SmartOSC Fintech</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2019 - Nov 2020</h6>
+            <p>- Take part in training academy of company about Java core, Spring framework, MySQL, Restful API,
+                Thymeleaf, Postman</p>
+            <p>- Write Code, Fix bugs, Write Unit Test</p>
             <p>- Code followed by basic design as requirements of customers</p>
             <p>- Participate in and research projects from Viettel side</p>
-          <hr>
         </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-wrench fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-        <h3>Đến công ty chỉ có đi mua bánh mỳ, pha chè cho các anh. Nên là chưa làm dự án nào cả</h3>
-        <!-- <div class="w3-container">
-          <h5 class="w3-opacity"><b>CarDoctor App</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug-2022 - Dec-2022</h6>
-          <table>
-            <tr>
-              <th>Customer</th>
-              <td>Mfunctions</td>
-            </tr>
-            <tr>
-              <th>Description</th>
-              <td>The application allows users and garages to schedule car repairs</td>
-            </tr>
-            <tr>
-              <th>Team size</th>
-              <td>15</td>
-            </tr>
-            <tr>
-              <th>My position</th>
-              <td>Java Developer</td>
-            </tr>
-            <tr>
-              <th>Responsibilities</th>
-              <td>- Design APIs for the screen in the project of booking car repair schedules
-              <td>- Investigate available client APIs</td>
-              <td> Write APIs followed by figma and mobile design</td>
-            </tr>
-            <tr>
-              <th>Technologies used </th>
-              <td>- IntelliJ, Postman, MariaDB, Figma, Java Spring Boot</td>
-            </tr>
-          </table>
-          <hr>
-        </div> -->
-      </div>
-
-      
     </div>
-  </div>
+
+    <!-- Projects Section -->
+    <div class="section">
+        <h2><i class="fa fa-wrench fa-fw"></i>Projects</h2>
+        <p>Đến công ty chỉ có đi mua bánh mỳ, pha chè cho các anh. Nên là chưa làm dự án nào cả</p>
+    </div>
+
+    <div class="section">
+        <h2><i class="fa fa-futbol-o fa-fw"></i>Hobbies</h2>
+        <p>Learn English</p>
+        <p>Read and research new technology</p>
+        <p>Participate in volunteer activities</p>
+    </div>
+
 </div>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Contact for me</p>
-  <a href="https://facebook.com/maLgnuTeL">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  </a>
-  <a href="https://www.instagram.com/lamchuot_1211/">
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/lamlt1211/">
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </a>
-  <p>Powered by <a href="https://facebook.com/maLgnuTeL" target="_blank">TugLam</a></p>
+    <p>Contact for me</p>
+    <a href="https://facebook.com/maLgnuTeL">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.instagram.com/lamchuot_1211/">
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/lamlt1211/">
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </a>
+    <p>Powered by <a href="https://facebook.com/maLgnuTeL" target="_blank">TugLam</a></p>
 </footer>
 
 </body>
